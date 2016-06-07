@@ -1,0 +1,8 @@
+# vygenerování LE certifikátu z příkazové řádky
+# v DNS už musí být IPčko, které ukazuje na webový server a ten musí v default hostit ./well-known (z /usr/share/nginx/html,
+# tomto případě)
+
+# pustit z /opt/letsencrypt
+# -d www.domena.cz -d domena.cz    —> je to ok, ale musí být zachováno pořadí
+
+./letsencrypt-auto certonly -a webroot -d www.domena.cz -d domena.cz --webroot-path=/usr/share/nginx/html
