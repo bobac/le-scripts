@@ -24,7 +24,6 @@ cd /opt/letsencrypt
 ```
 cd /etc/nginx/sites-available
 cp template mynewsite.cz
-cd ../sites-enabled
 ```
 and replace !domainhere! with mynewsite.cz
 
