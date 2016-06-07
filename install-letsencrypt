@@ -1,0 +1,5 @@
+sudo -s
+apt-get update
+apt-get upgrade -y
+apt-get install -y git bc
+git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
